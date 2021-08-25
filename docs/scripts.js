@@ -1,8 +1,15 @@
 // Все значения в пикселях в комментариях актуальны для монитора, на котором велась разработка!
-var temp
-var bodyblockWidth = (document.body.offsetWidth * window.devicePixelRatio) - 50; // чуть менее 1000px на моём мониторе.
+var temp;
+var bodyblockWidth;
 var pressedButton = 'button-1';
 var currentContent = 'about';
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+	bodyblockWidth = (document.body.offsetWidth * window.devicePixelRatio) - 50;
+}
+else {
+	bodyblockWidth = document.body.offsetWidth - 50;
+}
 
 temp = document.getElementsByClassName('bodyblock');
 for ( i = 0; i < temp.length; i++ ) {
