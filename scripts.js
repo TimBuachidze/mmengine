@@ -1,6 +1,6 @@
 // Все значения в пикселях в комментариях актуальны для монитора, на котором велась разработка!
 var temp
-var bodyblockWidth = screen.width - 67; // чуть менее 1000px на моём мониторе.
+var bodyblockWidth = (document.body.offsetWidth * window.devicePixelRatio) - 50;
 var pressedButton = 'button-1';
 var currentContent = 'about';
 
