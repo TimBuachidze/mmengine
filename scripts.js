@@ -61,6 +61,7 @@ for ( i = 0; i < temp.length; i++ ) {
 temp = document.getElementsByClassName('speechtext-left');
 for ( i = 0; i < temp.length; i++ ) {
 	temp[i].style.paddingLeft = generateNominalPixels(25);
+	temp[i].style.paddingRight = generateNominalPixels(25);
 	temp[i].style.borderRadius = generateNominalPixels(35) + ' ' + generateNominalPixels(35) + ' ' + generateNominalPixels(35) + ' ' + '0px';
 };
 
