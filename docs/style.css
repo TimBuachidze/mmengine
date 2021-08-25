@@ -247,7 +247,6 @@ body {
     font-family: frizqt;
 	cursor: url('cursors/cursor.cur'), auto;
 	background-color: black;
-	max-width: 100% !important;
 }
 
 #wrapper {
