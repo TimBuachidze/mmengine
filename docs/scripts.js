@@ -1,6 +1,6 @@
 // Все значения в пикселях в комментариях актуальны для монитора, на котором велась разработка!
 var temp
-var bodyblockWidth = screen.width - 67; // чуть менее 1000px на моём мониторе.
+var bodyblockWidth = (document.body.offsetWidth * window.devicePixelRatio) - 50; // чуть менее 1000px на моём мониторе.
 var pressedButton = 'button-1';
 var currentContent = 'about';
 
@@ -61,6 +61,7 @@ for ( i = 0; i < temp.length; i++ ) {
 temp = document.getElementsByClassName('speechtext-left');
 for ( i = 0; i < temp.length; i++ ) {
 	temp[i].style.paddingLeft = generateNominalPixels(25);
+	temp[i].style.paddingRight = generateNominalPixels(25);
 	temp[i].style.borderRadius = generateNominalPixels(35) + ' ' + generateNominalPixels(35) + ' ' + generateNominalPixels(35) + ' ' + '0px';
 };
 
